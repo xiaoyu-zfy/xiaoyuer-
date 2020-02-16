@@ -1,0 +1,44 @@
+<template>
+    <nav>
+        <ul>
+            <li>
+                <router-link to="/" exact>博客</router-link>
+                <router-link to="/add" exact>写博客</router-link>
+            </li>
+        </ul>
+    </nav>
+</template>
+
+<script>
+export default {
+    name: 'BlogHeader'
+}
+</script>
+
+<style scoped>
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 15px
+
+}
+nav {
+    background: #625050;
+    padding: 30px 0;
+    margin-bottom: 15px;
+}
+.router-link-active {
+    background: rgba(255, 255, 255, 0.8);
+    color: black
+}
+</style>
